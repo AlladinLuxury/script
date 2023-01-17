@@ -14,7 +14,7 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-currentVersion = '5.9.3'
+currentVersion = '0.1'
 
 Players = game:GetService("Players")
 
@@ -206,7 +206,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.Text = "AlladinLuxury v" .. currentVersion
 
 do
 	local emoji = ({
@@ -1373,7 +1373,7 @@ About.Position = UDim2.new(0, 17, 0, 10)
 About.Size = UDim2.new(0, 187, 0, 49)
 About.Font = Enum.Font.SourceSans
 About.TextSize = 14
-About.Text = "Plugins are .iy files and should be located in the 'workspace' folder of your exploit."
+About.Text = "Чтобы добавить плагин вам нужно импортировать файл по пути Download/Fluxus/Workspace, окончание файла должно быть .iy"
 About.TextColor3 = Color3.fromRGB(255, 255, 255)
 About.TextWrapped = true
 About.TextYAlignment = Enum.TextYAlignment.Top
@@ -2779,7 +2779,7 @@ defaultsettings = {
 	prefix = ';';
 	StayOpen = false;
 	espTransparency = 0.3;
-	keepIY = true;
+	ALuxKeep = true;
 	logsEnabled = false;
 	jLogsEnabled = false;
 	aliases = {};
@@ -2801,13 +2801,13 @@ nosaves = false
 local loadedEventData = nil
 function saves()
 	if writefileExploit() then
-		if pcall(function() readfile("IY_FE.iy") end) then
-			if readfile("IY_FE.iy") ~= nil then
+		if pcall(function() readfile("ALux.txt") end) then
+			if readfile("ALux.txt") ~= nil then
 				local success, response = pcall(function()
-					local json = HttpService:JSONDecode(readfile("IY_FE.iy"))
+					local json = HttpService:JSONDecode(readfile("ALux.txt"))
 					if json.prefix ~= nil then prefix = json.prefix else prefix = ';' end
 					if json.StayOpen ~= nil then StayOpen = json.StayOpen else StayOpen = false end
-					if json.keepIY ~= nil then KeepInfYield = json.keepIY else KeepInfYield = true end
+					if json.ALuxKeep ~= nil then KeepInfYield = json.ALuxKeep else KeepInfYield = true end
 					if json.espTransparency ~= nil then espTransparency = json.espTransparency else espTransparency = 0.3 end
 					if json.logsEnabled ~= nil then logsEnabled = json.logsEnabled else logsEnabled = false end
 					if json.jLogsEnabled ~= nil then jLogsEnabled = json.jLogsEnabled else jLogsEnabled = false end
@@ -2827,24 +2827,24 @@ function saves()
 				if not success then
 					warn("Save Json Error:", response)
 					warn("Overwriting Save File")
-					writefileCooldown("IY_FE.iy", defaults)
+					writefileCooldown("ALux.txt", defaults)
 					wait()
 					saves()
 				end
 			else
-				writefileCooldown("IY_FE.iy", defaults)
+				writefileCooldown("ALux.txt", defaults)
 				wait()
 				saves()
 			end
 		else
-			writefileCooldown("IY_FE.iy", defaults)
+			writefileCooldown("ALux.txt", defaults)
 			wait()
-			if pcall(function() readfile("IY_FE.iy") end) then
+			if pcall(function() readfile("ALux.txt") end) then
 				saves()
 			else
-				nosaves = true
-				prefix = ';'
-				StayOpen = false
+				nosaves = false
+				prefix = '/'
+				StayOpen = true
 				KeepInfYield = true
 				espTransparency = 0.3
 				logsEnabled = false
@@ -2954,7 +2954,7 @@ function updatesaves()
 		local update = {
 			prefix = prefix;
 			StayOpen = StayOpen;
-			keepIY = KeepInfYield;
+			ALuxKeep = KeepInfYield;
 			espTransparency = espTransparency;
 			logsEnabled = logsEnabled;
 			jLogsEnabled = jLogsEnabled;
@@ -4296,7 +4296,7 @@ CMDs[#CMDs + 1] = {NAME = 'guidelete', DESC = 'Enables backspace to delete GUI'}
 CMDs[#CMDs + 1] = {NAME = 'unguidelete / noguidelete', DESC = 'Disables guidelete'}
 CMDs[#CMDs + 1] = {NAME = 'hideiy', DESC = 'Hides the main IY GUI'}
 CMDs[#CMDs + 1] = {NAME = 'showiy / unhideiy', DESC = 'Shows IY again'}
-CMDs[#CMDs + 1] = {NAME = 'keepiy', DESC = 'Auto execute IY when you teleport through servers'}
+CMDs[#CMDs + 1] = {NAME = 'ALuxKeep', DESC = 'Auto execute IY when you teleport through servers'}
 CMDs[#CMDs + 1] = {NAME = 'unkeepiy', DESC = 'Disable keepiy'}
 CMDs[#CMDs + 1] = {NAME = 'togglekeepiy', DESC = 'Toggle keepiy'}
 CMDs[#CMDs + 1] = {NAME = 'savegame / saveplace', DESC = 'Uses saveinstance to save the game'}
@@ -6284,7 +6284,7 @@ addcmd('discord', {'support', 'help'}, function(args, speaker)
 	end
 end)
 
-addcmd('keepiy', {}, function(args, speaker)
+addcmd('ALuxKeep', {}, function(args, speaker)
 	if queueteleport then
 		KeepInfYield = true
 		updatesaves()
@@ -7998,7 +7998,6 @@ function GetFocusDistance(cameraFrame)
 			end
 		end
 	end
-
 	return fz:Dot(minVect)*minDist
 end
 
