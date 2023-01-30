@@ -14,7 +14,7 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-currentVersion = '0.20'
+currentVersion = '0.28'
 
 Players = game:GetService("Players")
 
@@ -191,8 +191,8 @@ scroll = {}
 Holder.Name = randomString()
 Holder.Parent = PARENT
 Holder.Active = true
-Holder.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
-Holder.BorderSizePixel = 0
+Holder.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+Holder.BorderSizePixel = 1
 Holder.Position = UDim2.new(1, -250, 1, -220)
 Holder.Size = UDim2.new(0, 250, 0, 220)
 Holder.ZIndex = 10
@@ -328,7 +328,7 @@ table.insert(scroll,SettingsHolder)
 
 Prefix.Name = "Prefix"
 Prefix.Parent = SettingsHolder
-Prefix.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Prefix.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Prefix.BorderSizePixel = 0
 Prefix.BackgroundTransparency = 1
 Prefix.Position = UDim2.new(0, 5, 0, 5)
@@ -358,7 +358,7 @@ table.insert(text2,PrefixBox)
 
 function makeSettingsButton(name,iconID,off)
 	local button = Instance.new("TextButton")
-	button.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+	button.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 	button.BorderSizePixel = 0
 	button.Position = UDim2.new(0,0,0,0)
 	button.Size = UDim2.new(1,0,0,25)
@@ -493,7 +493,7 @@ table.insert(shade1,Notification)
 
 Title_2.Name = "Title"
 Title_2.Parent = Notification
-Title_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Title_2.BorderSizePixel = 0
 Title_2.Size = UDim2.new(0, 250, 0, 20)
 Title_2.Font = Enum.Font.SourceSans
@@ -633,7 +633,7 @@ table.insert(shade1,KeybindsFrame)
 
 Close.Name = "Close"
 Close.Parent = KeybindsFrame
-Close.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0, 205, 0, 150)
 Close.Size = UDim2.new(0, 40, 0, 20)
@@ -647,7 +647,7 @@ table.insert(text1,Close)
 
 Add.Name = "Add"
 Add.Parent = KeybindsFrame
-Add.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Add.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Add.BorderSizePixel = 0
 Add.Position = UDim2.new(0, 5, 0, 150)
 Add.Size = UDim2.new(0, 40, 0, 20)
@@ -661,7 +661,7 @@ table.insert(text1,Add)
 
 Delete.Name = "Delete"
 Delete.Parent = KeybindsFrame
-Delete.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Delete.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Delete.BorderSizePixel = 0
 Delete.Position = UDim2.new(0, 50, 0, 150)
 Delete.Size = UDim2.new(0, 40, 0, 20)
@@ -690,7 +690,7 @@ Holder_2.ZIndex = 10
 
 Example_2.Name = "Example"
 Example_2.Parent = KeybindsFrame
-Example_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Example_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Example_2.BorderSizePixel = 0
 Example_2.Size = UDim2.new(0, 10, 0, 20)
 Example_2.Visible = false
@@ -699,7 +699,7 @@ table.insert(shade2,Example_2)
 
 Text_3.Name = "Text"
 Text_3.Parent = Example_2
-Text_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0, 10, 0, 0)
 Text_3.Size = UDim2.new(0, 240, 0, 20)
@@ -747,7 +747,7 @@ table.insert(shade1,background_2)
 Dark_3.Name = "Dark"
 Dark_3.Parent = background_2
 Dark_3.Active = true
-Dark_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Dark_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Dark_3.BorderSizePixel = 0
 Dark_3.Position = UDim2.new(0, 135, 0, 0)
 Dark_3.Size = UDim2.new(0, 2, 0, 185)
@@ -771,7 +771,7 @@ table.insert(text1,Directions)
 
 BindTo.Name = "BindTo"
 BindTo.Parent = background_2
-BindTo.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+BindTo.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 BindTo.BorderSizePixel = 0
 BindTo.Position = UDim2.new(0, 10, 0, 95)
 BindTo.Size = UDim2.new(0, 115, 0, 50)
@@ -798,7 +798,7 @@ table.insert(text1,TriggerLabel)
 
 BindTriggerSelect.Name = "BindTo"
 BindTriggerSelect.Parent = background_2
-BindTriggerSelect.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+BindTriggerSelect.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 BindTriggerSelect.BorderSizePixel = 0
 BindTriggerSelect.Position = UDim2.new(0, 60, 0, 155)
 BindTriggerSelect.Size = UDim2.new(0, 65, 0, 20)
@@ -812,7 +812,7 @@ table.insert(text1,BindTriggerSelect)
 
 Add_2.Name = "Add"
 Add_2.Parent = background_2
-Add_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Add_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Add_2.BorderSizePixel = 0
 Add_2.Position = UDim2.new(0, 310, 0, 35)
 Add_2.Size = UDim2.new(0, 40, 0, 20)
@@ -840,7 +840,7 @@ table.insert(scroll,Toggles)
 
 ClickTP.Name = "Click TP (Hold Key & Click)"
 ClickTP.Parent = Toggles
-ClickTP.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+ClickTP.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 ClickTP.BorderSizePixel = 0
 ClickTP.Size = UDim2.new(0, 200, 0, 20)
 ClickTP.ZIndex = 10
@@ -868,7 +868,7 @@ table.insert(text2,Select)
 
 ClickDelete.Name = "Click Delete (Hold Key & Click)"
 ClickDelete.Parent = Toggles
-ClickDelete.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+ClickDelete.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 ClickDelete.BorderSizePixel = 0
 ClickDelete.Position = UDim2.new(0, 0, 0, 25)
 ClickDelete.Size = UDim2.new(0, 200, 0, 20)
@@ -897,7 +897,7 @@ table.insert(text2,Select_2)
 
 Cmdbar_2.Name = "Cmdbar_2"
 Cmdbar_2.Parent = background_2
-Cmdbar_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Cmdbar_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Cmdbar_2.BorderSizePixel = 0
 Cmdbar_2.Position = UDim2.new(0, 150, 0, 35)
 Cmdbar_2.Size = UDim2.new(0, 150, 0, 20)
@@ -911,7 +911,7 @@ Cmdbar_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Cmdbar_3.Name = "Cmdbar_3"
 Cmdbar_3.Parent = background_2
-Cmdbar_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Cmdbar_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Cmdbar_3.BorderSizePixel = 0
 Cmdbar_3.Position = UDim2.new(0, 150, 0, 60)
 Cmdbar_3.Size = UDim2.new(0, 150, 0, 20)
@@ -925,7 +925,7 @@ Cmdbar_3.TextXAlignment = Enum.TextXAlignment.Left
 
 CreateToggle.Name = "CreateToggle"
 CreateToggle.Parent = background_2
-CreateToggle.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+CreateToggle.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 CreateToggle.BackgroundTransparency = 1
 CreateToggle.BorderSizePixel = 0
 CreateToggle.Position = UDim2.new(0, 152, 0, 10)
@@ -962,7 +962,7 @@ On_2.TextSize = 14.000
 
 shadow_2.Name = "shadow"
 shadow_2.Parent = KeybindEditor
-shadow_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+shadow_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 shadow_2.BorderSizePixel = 0
 shadow_2.Size = UDim2.new(0, 360, 0, 20)
 shadow_2.ZIndex = 10
@@ -1008,7 +1008,7 @@ table.insert(shade1,PositionsFrame)
 
 Close_3.Name = "Close"
 Close_3.Parent = PositionsFrame
-Close_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Close_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Close_3.BorderSizePixel = 0
 Close_3.Position = UDim2.new(0, 205, 0, 150)
 Close_3.Size = UDim2.new(0, 40, 0, 20)
@@ -1022,7 +1022,7 @@ table.insert(text1,Close_3)
 
 Delete_5.Name = "Delete"
 Delete_5.Parent = PositionsFrame
-Delete_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Delete_5.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Delete_5.BorderSizePixel = 0
 Delete_5.Position = UDim2.new(0, 50, 0, 150)
 Delete_5.Size = UDim2.new(0, 40, 0, 20)
@@ -1036,7 +1036,7 @@ table.insert(text1,Delete_5)
 
 Part.Name = "PartGoto"
 Part.Parent = PositionsFrame
-Part.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Part.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Part.BorderSizePixel = 0
 Part.Position = UDim2.new(0, 5, 0, 150)
 Part.Size = UDim2.new(0, 40, 0, 20)
@@ -1066,7 +1066,7 @@ Holder_4.ZIndex = 10
 
 Example_4.Name = "Example"
 Example_4.Parent = PositionsFrame
-Example_4.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Example_4.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Example_4.BorderSizePixel = 0
 Example_4.Size = UDim2.new(0, 10, 0, 20)
 Example_4.Visible = false
@@ -1076,7 +1076,7 @@ table.insert(shade2,Example_4)
 
 Text_5.Name = "Text"
 Text_5.Parent = Example_4
-Text_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Text_5.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Text_5.BorderSizePixel = 0
 Text_5.Position = UDim2.new(0, 10, 0, 0)
 Text_5.Size = UDim2.new(0, 240, 0, 20)
@@ -1172,7 +1172,7 @@ Holder_3.ZIndex = 10
 
 Example_3.Name = "Example"
 Example_3.Parent = AliasesFrame
-Example_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Example_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Example_3.BorderSizePixel = 0
 Example_3.Size = UDim2.new(0, 10, 0, 20)
 Example_3.Visible = false
@@ -1181,7 +1181,7 @@ table.insert(shade2,Example_3)
 
 Text_4.Name = "Text"
 Text_4.Parent = Example_3
-Text_4.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Text_4.BorderSizePixel = 0
 Text_4.Position = UDim2.new(0, 10, 0, 0)
 Text_4.Size = UDim2.new(0, 240, 0, 20)
@@ -1264,7 +1264,7 @@ Holder_5.ZIndex = 10
 
 Example_5.Name = "Example"
 Example_5.Parent = PluginsFrame
-Example_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Example_5.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Example_5.BorderSizePixel = 0
 Example_5.Size = UDim2.new(0, 10, 0, 20)
 Example_5.Visible = false
@@ -1273,7 +1273,7 @@ table.insert(shade2,Example_5)
 
 Text_6.Name = "Text"
 Text_6.Parent = Example_5
-Text_6.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+Text_6.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 Text_6.BorderSizePixel = 0
 Text_6.Position = UDim2.new(0, 10, 0, 0)
 Text_6.Size = UDim2.new(0, 240, 0, 20)
@@ -1312,7 +1312,7 @@ PluginEditor.ZIndex = 10
 background_3.Name = "background"
 background_3.Parent = PluginEditor
 background_3.Active = true
-background_3.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+background_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 background_3.BorderSizePixel = 0
 background_3.Position = UDim2.new(0, 0, 0, 20)
 background_3.Size = UDim2.new(0, 360, 0, 160)
@@ -1339,7 +1339,7 @@ Img.ZIndex = 10
 
 AddPlugin.Name = "AddPlugin"
 AddPlugin.Parent = background_3
-AddPlugin.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+AddPlugin.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 AddPlugin.BorderSizePixel = 0
 AddPlugin.Position = UDim2.new(0, 235, 0, 100)
 AddPlugin.Size = UDim2.new(0, 115, 0, 50)
@@ -1353,7 +1353,7 @@ table.insert(text1,AddPlugin)
 
 FileName.Name = "FileName"
 FileName.Parent = background_3
-FileName.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+FileName.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 FileName.BorderSizePixel = 0
 FileName.Position = UDim2.new(0.028, 0, 0.625, 0)
 FileName.Size = UDim2.new(0, 200, 0, 50)
@@ -1397,7 +1397,7 @@ table.insert(text1,Directions_2)
 
 shadow_3.Name = "shadow"
 shadow_3.Parent = PluginEditor
-shadow_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+shadow_3.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 shadow_3.BorderSizePixel = 0
 shadow_3.Size = UDim2.new(0, 360, 0, 20)
 shadow_3.ZIndex = 10
@@ -1510,7 +1510,7 @@ table.insert(text1,ChoosePart)
 
 CopyPath.Name = "CopyPath"
 CopyPath.Parent = background_4
-CopyPath.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+CopyPath.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 CopyPath.BorderSizePixel = 0
 CopyPath.Position = UDim2.new(0, 185, 0, 55)
 CopyPath.Size = UDim2.new(0, 75, 0, 30)
@@ -1555,7 +1555,7 @@ table.insert(text1,Path)
 
 shadow_4.Name = "shadow"
 shadow_4.Parent = ToPartFrame
-shadow_4.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+shadow_4.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 shadow_4.BorderSizePixel = 0
 shadow_4.Size = UDim2.new(0, 360, 0, 20)
 shadow_4.ZIndex = 10
@@ -2768,12 +2768,12 @@ reference = (function()
 	end)
 end)()
 
-currentShade1 = Color3.fromRGB(36, 36, 37)
-currentShade2 = Color3.fromRGB(46, 46, 47)
+currentShade1 = Color3.fromRGB(0, 0, 0)
+currentShade2 = Color3.fromRGB(255, 0, 255)
 currentShade3 = Color3.fromRGB(78, 78, 79)
 currentText1 = Color3.new(1, 1, 1)
 currentText2 = Color3.new(0, 0, 0)
-currentScroll = Color3.fromRGB(78,78,79)
+currentScroll = Color3.fromRGB(255,0,0)
 
 defaultsettings = {
 	prefix = '/';
@@ -2873,7 +2873,7 @@ function saves()
 				background.Name = "background"
 				background.Parent = FileError
 				background.Active = true
-				background.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+				background.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 				background.BorderSizePixel = 0
 				background.Position = UDim2.new(0, 0, 0, 20)
 				background.Size = UDim2.new(0, 360, 0, 205)
@@ -2896,7 +2896,7 @@ function saves()
 
 				shadow.Name = "shadow"
 				shadow.Parent = FileError
-				shadow.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+				shadow.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
 				shadow.BorderSizePixel = 0
 				shadow.Size = UDim2.new(0, 360, 0, 20)
 				shadow.ZIndex = 10
@@ -3154,9 +3154,9 @@ function CreateJoinLabel(plr,ID)
 	local ImageLabel_3 = Instance.new("ImageLabel")
 	infoFrame.Name = randomString()
 	infoFrame.Parent = scroll_3
-	infoFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+	infoFrame.BackgroundColor3 = Color3.new(255, 0, 255)
 	infoFrame.BackgroundTransparency = 1
-	infoFrame.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+	infoFrame.BorderColor3 = Color3.new(255, 0, 255)
 	infoFrame.Size = UDim2.new(1, 0, 0, 50)
 	info1.Name = randomString()
 	info1.Parent = infoFrame
@@ -3174,20 +3174,20 @@ function CreateJoinLabel(plr,ID)
 	info2.Name = randomString()
 	info2.Parent = infoFrame
 	info2.BackgroundTransparency = 1
-	info2.BorderSizePixel = 0
+	info2.BorderSizePixel = 1
 	info2.Position = UDim2.new(0, 185, 0, 0)
 	info2.Size = UDim2.new(0, 140, 1, -5)
 	info2.ZIndex = 10
 	info2.Font = Enum.Font.SourceSans
 	info2.FontSize = Enum.FontSize.Size14
 	info2.Text = "User ID: "..ID.."\nAccount Age: "..plr.AccountAge.."\nJoined Roblox: Loading..."
-	info2.TextColor3 = Color3.new(1, 1, 1)
+	info2.TextColor3 = Color3.new(255, 1, 255)
 	info2.TextWrapped = true
 	info2.TextXAlignment = Enum.TextXAlignment.Left
 	info2.TextYAlignment = Enum.TextYAlignment.Center
 	ImageLabel_3.Parent = infoFrame
 	ImageLabel_3.BackgroundTransparency = 1
-	ImageLabel_3.BorderSizePixel = 0
+	ImageLabel_3.BorderSizePixel = 5
 	ImageLabel_3.Size = UDim2.new(0, 45, 1, 0)
 	ImageLabel_3.Image = Players:GetUserThumbnailAsync(ID, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
 	scroll_3.CanvasSize = UDim2.new(0, 0, 0, listlayout.AbsoluteContentSize.Y)
@@ -3683,8 +3683,8 @@ ColorsButton.MouseButton1Click:Connect(function()
 			updatesaves()
 		end
 		Npicker.Default = function(self)
-			updateColors(Color3.fromRGB(36, 36, 37),shade1)
-			updateColors(Color3.fromRGB(46, 46, 47),shade2)
+			updateColors(Color3.fromRGB(255, 0, 255),shade1)
+			updateColors(Color3.fromRGB(255, 0, 255),shade2)
 			updateColors(Color3.fromRGB(78, 78, 79),shade3)
 			updateColors(Color3.new(1, 1, 1),text1)
 			updateColors(Color3.new(0, 0, 0),text2)
@@ -4237,6 +4237,7 @@ task.spawn(function()
 	end
 end)
 
+
 function autoComplete(str,curText)
 	local endingChar = {"[", "/", "(", " "}
 	local stop = 0
@@ -4264,8 +4265,13 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'Misc', DESC = ''}
 
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = 'Misc', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'weaken [num]', DESC = 'Drift blyat'}
+CMDs[#CMDs + 1] = {NAME = 'unweaken', DESC = 'Net drifta'}
 CMDs[#CMDs + 1] = {NAME = 'ping', DESC = 'Pingchecker'}
 CMDs[#CMDs + 1] = {NAME = 'notools', DESC = 'Remove tools'}
 CMDs[#CMDs + 1] = {NAME = 'droptools', DESC = 'Drop tools'}
@@ -4273,13 +4279,12 @@ CMDs[#CMDs + 1] = {NAME = 'droppabletools', DESC = 'Makes your tools droppable'}
 CMDs[#CMDs + 1] = {NAME = 'hovername', DESC = 'Click show name'}
 CMDs[#CMDs + 1] = {NAME = 'unhovername', DESC = 'Turn off hovername'}
 CMDs[#CMDs + 1] = {NAME = 'joindate / jd [plr]', DESC = 'Tells you the date the player joined Roblox'}
-CMDs[#CMDs + 1] = {NAME = 'chatjoindate / cjd [plr]', DESC = 'Chats the date the player joined Roblox'}
 CMDs[#CMDs + 1] = {NAME = 'copyname [plr]', DESC = 'Copy full player name'}
 CMDs[#CMDs + 1] = {NAME = 'copyid [plr]', DESC = 'Copy player ID'}
 CMDs[#CMDs + 1] = {NAME = 'partname', DESC = 'Click show name item'}
 CMDs[#CMDs + 1] = {NAME = 'invpart', DESC = 'Show invisible parts'}
 CMDs[#CMDs + 1] = {NAME = 'uninvpart', DESC = 'Hide invis parts'}
-CMDs[#CMDs + 1] = {NAME = 'btools (CLIENT)', DESC = 'Visual change map tools'}
+CMDs[#CMDs + 1] = {NAME = 'btools', DESC = 'Visual change map tools'}
 CMDs[#CMDs + 1] = {NAME = 'logs', DESC = 'Open logs'}
 CMDs[#CMDs + 1] = {NAME = 'spawn (use nospawp first!!!)', DESC = 'Set spawn'}
 CMDs[#CMDs + 1] = {NAME = 'nospawn', DESC = 'Remove spawn'}
@@ -4306,15 +4311,21 @@ CMDs[#CMDs + 1] = {NAME = 'hidegui', DESC = 'Hides any GUIs in PlayerGui'}
 CMDs[#CMDs + 1] = {NAME = 'unhidegui', DESC = 'Undoes hideguis'}
 CMDs[#CMDs + 1] = {NAME = 'noname', DESC = 'Hide names'}
 
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Menu settings', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
+CMDs[#CMDs + 1] = {NAME = 'bordercolor', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'border', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'removemenu', DESC = 'Removed menu'}
 CMDs[#CMDs + 1] = {NAME = 'hidemenu', DESC = 'Hide menu'}
 CMDs[#CMDs + 1] = {NAME = 'showmenu', DESC = 'Shows menu'}
 CMDs[#CMDs + 1] = {NAME = 'keepcom', DESC = 'Save commands'}
 CMDs[#CMDs + 1] = {NAME = 'unkeepcom', DESC = 'Disable keepcom'}
 
-
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Player', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
 CMDs[#CMDs + 1] = {NAME = 'spin [speed]', DESC = 'Spin'}
 CMDs[#CMDs + 1] = {NAME = 'unspin', DESC = 'Disable spin'}
@@ -4325,7 +4336,6 @@ CMDs[#CMDs + 1] = {NAME = 'maxzoom [num]', DESC = 'Maximum camera zoom'}
 CMDs[#CMDs + 1] = {NAME = 'minzoom [num](default 60)', DESC = 'Minimum camera zoom'}
 CMDs[#CMDs + 1] = {NAME = 'camdistance [num]', DESC = 'Changes camera distance from your player'}
 CMDs[#CMDs + 1] = {NAME = 'fov [num](default 70)', DESC = 'Fieldnof view'}
-CMDs[#CMDs + 1] = {NAME = 'Shiftlock', DESC = 'Enable shiftlock'}
 CMDs[#CMDs + 1] = {NAME = 'lookat [plr](Aim soon...)', DESC = 'Look player'}
 CMDs[#CMDs + 1] = {NAME = 'spectate [plr]', DESC = 'View a player'}
 CMDs[#CMDs + 1] = {NAME = 'spectateitem [part name]', DESC = 'View a item'}
@@ -4364,8 +4374,6 @@ CMDs[#CMDs + 1] = {NAME = 'wcp [waypoint]', DESC = 'Walk to checkpoint using pat
 CMDs[#CMDs + 1] = {NAME = 'unfollow', DESC = 'Stop follow player'}
 CMDs[#CMDs + 1] = {NAME = 'stare [plr]', DESC = 'Aim model'}
 CMDs[#CMDs + 1] = {NAME = 'unstare [plr]', DESC = 'Disables model aim'}
-CMDs[#CMDs + 1] = {NAME = 'fling', DESC = 'Fling'}
-CMDs[#CMDs + 1] = {NAME = 'unfling', DESC = 'Disable fling'}
 CMDs[#CMDs + 1] = {NAME = 'reset', DESC = 'Reset'}
 CMDs[#CMDs + 1] = {NAME = 'god', DESC = 'Work im some games'}
 CMDs[#CMDs + 1] = {NAME = 'invis', DESC = 'Leonnnnn'}
@@ -4379,23 +4387,22 @@ CMDs[#CMDs + 1] = {NAME = 'loopjp [num]', DESC = 'Loop your jump height'}
 CMDs[#CMDs + 1] = {NAME = 'unloopjp', DESC = 'Turn off loopjumppower'}
 CMDs[#CMDs + 1] = {NAME = 'maxslopeangle / msa [num]', DESC = 'Test'}
 CMDs[#CMDs + 1] = {NAME = 'gravity [num]', DESC = 'Change your gravity'}
-CMDs[#CMDs + 1] = {NAME = 'sit', DESC = 'You sit'}
-CMDs[#CMDs + 1] = {NAME = 'lay', DESC = 'You lay down'}
-CMDs[#CMDs + 1] = {NAME = 'sitwalk', DESC = 'You walk but you sit'}
 CMDs[#CMDs + 1] = {NAME = 'nosit', DESC = 'You cant sit'}
 CMDs[#CMDs + 1] = {NAME = 'unnosit', DESC = 'Disable nosit'}
 CMDs[#CMDs + 1] = {NAME = 'jump', DESC = 'You jump'}
 CMDs[#CMDs + 1] = {NAME = 'autojump', DESC = 'Auto jump'}
 CMDs[#CMDs + 1] = {NAME = 'unajump', DESC = 'Disable autojump'}
-CMDs[#CMDs + 1] = {NAME = 'stun', DESC = 'Stun you'}
 CMDs[#CMDs + 1] = {NAME = 'unstun', DESC = 'Disable stun'}
 CMDs[#CMDs + 1] = {NAME = 'norotate', DESC = 'Disable rotate'}
 CMDs[#CMDs + 1] = {NAME = 'unnorotate', DESC = 'Enables rotate'}
 CMDs[#CMDs + 1] = {NAME = 'tpwalk [num]', DESC = 'Teleport walk'}
 CMDs[#CMDs + 1] = {NAME = 'untpwalk', DESC = 'Disable tpwalk'}
-CMDs[#CMDs + 1] = {NAME = 'trip', DESC = 'Spotknulsya'}
+CMDs[#CMDs + 1] = {NAME = 'inspect [plr]', DESC = 'See profile player'}
+CMDs[#CMDs + 1] = {NAME = 'respawn', DESC = 'Respawning you'}
 
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Graphic', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
 CMDs[#CMDs + 1] = {NAME = 'fb', DESC = 'Make map bright'}
 CMDs[#CMDs + 1] = {NAME = 'loopfb', DESC = 'Loop map bright'}
@@ -4413,7 +4420,9 @@ CMDs[#CMDs + 1] = {NAME = 'unxray', DESC = 'Restore transparency'}
 CMDs[#CMDs + 1] = {NAME = 'antilag', DESC = 'Boost FPS'}
 CMDs[#CMDs + 1] = {NAME = 'hd', DESC = 'Beautiful graphic'}
 
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Checkpoints', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
 CMDs[#CMDs + 1] = {NAME = 'cp [name]', DESC = 'Sets checkpoint in your position'}
 CMDs[#CMDs + 1] = {NAME = 'chs', DESC = 'Checkpoint list'}
@@ -4422,7 +4431,9 @@ CMDs[#CMDs + 1] = {NAME = 'unecp', DESC = 'Hide esp checkpoints'}
 CMDs[#CMDs + 1] = {NAME = 'tcp', DESC = 'Teleport to checkpoint'}
 CMDs[#CMDs + 1] = {NAME = 'dcp [name]', DESC = 'Delete checkpoint'}
 
-CMDs[#CMDs + 1] = {NAME = 'Client/Visual', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = 'Client|Visual', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
 CMDs[#CMDs + 1] = {NAME = 'antikick (CLIENT)', DESC = 'Prevents localscripts from kicking you'}
 CMDs[#CMDs + 1] = {NAME = 'freeze [plr] (CLIENT)', DESC = 'Freeze player'}
@@ -4433,41 +4444,38 @@ CMDs[#CMDs + 1] = {NAME = 'chams', DESC = 'Show model player'}
 CMDs[#CMDs + 1] = {NAME = 'unchams', DESC = 'Removes chams'}
 CMDs[#CMDs + 1] = {NAME = 'locate [plr]', DESC = 'View a one player'}
 CMDs[#CMDs + 1] = {NAME = 'unlocate [plr]', DESC = 'Remove locate'}
-CMDs[#CMDs + 1] = {NAME = 'deletemap', DESC = ''}
 
-CMDs[#CMDs + 1] = {NAME = 'Test/Soon', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = 'Test|Soon', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
-CMDs[#CMDs + 1] = {NAME = 'tpua [plr]', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'inspect [plr]', DESC = 'Test'}
 CMDs[#CMDs + 1] = {NAME = 'carpet [plr]', DESC = 'Test'}
 CMDs[#CMDs + 1] = {NAME = 'uncarpet', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'hipheight [num]', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'respawn', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'ejump', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'unejump', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'norender', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'render', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'blockhead', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'blockhats', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'blocktool', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'creeper', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'drophats', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'dv', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'weaken [num]', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'unweaken', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'strengthen [num]', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'unstrengthen', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'breakvelocity', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'split', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'autokeypress [key] [down delay] [up delay]', DESC = 'Test'}
-CMDs[#CMDs + 1] = {NAME = 'unautokeypress', DESC = 'Test'}
+
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = 'Troll', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'fling', DESC = 'Fling'}
+CMDs[#CMDs + 1] = {NAME = 'unfling', DESC = 'Disable fling'}
+CMDs[#CMDs + 1] = {NAME = 'sitwalk', DESC = 'You walk but you sit'}
+CMDs[#CMDs + 1] = {NAME = 'trip', DESC = 'Spotknulsya'}
+CMDs[#CMDs + 1] = {NAME = 'hipheight [num]', DESC = 'Change your hip'}
+CMDs[#CMDs + 1] = {NAME = 'split', DESC = 'Drop your body'}
+CMDs[#CMDs + 1] = {NAME = 'sit', DESC = 'You sit'}
+CMDs[#CMDs + 1] = {NAME = 'lay', DESC = 'You lay down'}
+CMDs[#CMDs + 1] = {NAME = 'stun', DESC = 'Stun you'}
 
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Other Games...', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'Blox Fruits', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 
+CMDs[#CMDs + 1] = {NAME = 'wscreen (fps boost)', DESC = 'Fps boost'}
+CMDs[#CMDs + 1] = {NAME = 'unwscreen', DESC = 'Unfpsboost'}
 CMDs[#CMDs + 1] = {NAME = 'Sea1', DESC = 'Teleport to sea 1'}
 CMDs[#CMDs + 1] = {NAME = 'Sea2', DESC = 'Teleport to sea 2'}
 CMDs[#CMDs + 1] = {NAME = 'Sea3', DESC = 'Teleport to sea 3'}
@@ -6201,9 +6209,9 @@ addcmd('serverinfo',{'info','sinfo'},function(args, speaker)
 
 		background.Name = "background"
 		background.Parent = FRAME
-		background.Active = true
+		background.Active = false
 		background.BackgroundColor3 = currentShade1
-		background.BorderSizePixel = 0
+		background.BorderSizePixel = 1
 		background.Position = UDim2.new(0, 0, 1, 0)
 		background.Size = UDim2.new(0, 250, 0, 250)
 		background.ZIndex = 10
@@ -8022,6 +8030,113 @@ addcmd('tweengotocamera',{'tweengotocam','tgotocam','ttocam'},function(args, spe
 	TweenService:Create(getRoot(speaker.Character), TweenInfo.new(tweenSpeed, Enum.EasingStyle.Linear), {CFrame = workspace.Camera.CFrame}):Play()
 end)
 
+addcmd('border',{},function(args, speaker)
+	local num = tonumber(5)
+
+                if num == nil or num == "0" then
+
+                    num = 2
+
+                end
+
+                Holder.BorderSizePixel = num
+
+                Holder.BorderMode = Enum.BorderMode.Outline
+
+            end)
+            
+            addcmd('bordercolor',{},function(args, speaker)
+	local R = tonumber(255)
+
+                local G = tonumber(0)
+
+                local B = tonumber(255)
+
+                if tostring(args[1]) ~= "default" then
+
+                    if R == nil then
+
+                        error([[Invalid Color
+
+                        Missing RED.]])
+
+                    elseif G == nil then
+
+                        error([[Invalid Color
+                        
+                        Missing GREEN.]])
+
+                    elseif B == nil then
+
+error([[Invalid Color local B = tonumber(255)
+
+                        Missing BLUE.]])
+
+                    else
+
+                        Holder.BorderColor3 = Color3.fromRGB(R,G,B)
+
+                    end
+
+                else
+
+                    Holder.BorderColor3 = Color3.fromRGB(20,20,20)
+
+                end
+
+            end)
+
+addcmd('removemenu',{'removem'},function(args, speaker)
+		function maximizeHolder()
+
+					if StayOpen == false then
+
+						pcall(function()
+
+						Holder:TweenPosition(UDim2.new(1, Holder.Position.X.Offset, 1, -220), "InOut", "Quart", 0.2, true, nil)
+
+						end)
+
+					end
+
+				end
+
+
+
+				minimizeNum = -20
+
+				function minimizeHolder()
+
+					if StayOpen == false then
+
+						pcall(function()
+
+							Holder:TweenPosition(UDim2.new(1, Holder.Position.X.Offset, 1, minimizeNum), "InOut", "Quart", 0.5, true, nil)
+
+						end)
+
+					end
+
+				end
+
+
+
+				function execCmd(cmdStr,speaker,store)
+
+					return
+
+				end			
+
+
+
+                		Holder.Parent:Destroy()
+
+				getgenv().IY_LOADED = false
+
+            end)
+
+
+
 addcmd('fov',{},function(args, speaker)
 	local fov = args[1] or 70
 	if isNumber(fov) then
@@ -8385,11 +8500,11 @@ addcmd('copyappearanceid',{'caid'},function(args, speaker)
 	end
 end)
 
-addcmd('norender',{},function(args, speaker)
+addcmd('wscreen',{},function(args, speaker)
 	RunService:Set3dRenderingEnabled(false)
 end)
 
-addcmd('render',{},function(args, speaker)
+addcmd('unwscreen',{},function(args, speaker)
 	RunService:Set3dRenderingEnabled(true)
 end)
 
@@ -9123,7 +9238,6 @@ end)
 
 addcmd('nohead',{'rhead','headless'},function(args, speaker)
 	if sethidden then
-		-- Full credit to Thomas_Cornez#0272 @Discord
 		local lplr = Players.LocalPlayer
 		local char = lplr.Character
 		local rigType = tostring(char:FindFirstChildOfClass('Humanoid').RigType) == "Enum.HumanoidRigType.R6" and 1 or tostring(char:FindFirstChildOfClass('Humanoid').RigType) == "Enum.HumanoidRigType.R15" and 2
@@ -9590,7 +9704,7 @@ addcmd('getposition',{'getpos','notifypos','notifyposition'},function(args, spea
 	end
 end)
 
-addcmd('copyposition',{'copypos'},function(args, speaker)
+addcmd('coords',{'copypos'},function(args, speaker)
 	local players = getPlayer(args[1], speaker)
 	for i,v in pairs(players)do
 		local char = Players[v].Character
@@ -10091,7 +10205,7 @@ function getTorso(x)
 	return x:FindFirstChild("Torso") or x:FindFirstChild("UpperTorso") or x:FindFirstChild("LowerTorso") or x:FindFirstChild("HumanoidRootPart")
 end
 
-addcmd('bang',{'rape'},function(args, speaker)
+addcmd('trah',{'rape'},function(args, speaker)
 	execCmd('unbang')
 	wait()
 	local players = getPlayer(args[1], speaker)
@@ -11657,7 +11771,7 @@ addcmd('rolewatchleave',{'unrolewatch'},function(args, speaker)
 	notify("Rolewatch", RolewatchData.Leave and "Leave has been Enabled" or "Leave has been Disabled")
 end)
 
-addcmd('removeterrain',{'rterrain','noterrain'},function(args, speaker)
+addcmd('deletemap',{'rterrain','noterrain'},function(args, speaker)
 	workspace:FindFirstChildOfClass('Terrain'):Clear()
 end)
 
