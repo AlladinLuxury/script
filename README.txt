@@ -14,7 +14,7 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-currentVersion = '0.1'
+currentVersion = '0.19'
 
 Players = game:GetService("Players")
 
@@ -288,7 +288,7 @@ SettingsButton.Parent = Holder
 SettingsButton.BackgroundTransparency = 1
 SettingsButton.Position = UDim2.new(0, 230, 0, 0)
 SettingsButton.Size = UDim2.new(0, 20, 0, 20)
-SettingsButton.Image = "1204397029"
+SettingsButton.Image = "rbxassetid://1204397029"
 SettingsButton.ZIndex = 10
 
 ReferenceButton = Instance.new("ImageButton")
@@ -297,7 +297,7 @@ ReferenceButton.Parent = Holder
 ReferenceButton.BackgroundTransparency = 1
 ReferenceButton.Position = UDim2.new(0, 212, 0, 2)
 ReferenceButton.Size = UDim2.new(0, 16, 0, 16)
-ReferenceButton.Image = "3523243755"
+ReferenceButton.Image = "rbxassetid://3523243755"
 ReferenceButton.ZIndex = 10
 
 Settings.Name = "Settings"
@@ -394,13 +394,13 @@ function makeSettingsButton(name,iconID,off)
 	return button
 end
 
-ColorsButton = makeSettingsButton("Edit Theme","4911962991")
+ColorsButton = makeSettingsButton("Edit Theme","rbxassetid://4911962991")
 ColorsButton.Position = UDim2.new(0,5,0,55)
 ColorsButton.Size = UDim2.new(1,-10,0,25)
 ColorsButton.Name = "Colors"
 ColorsButton.Parent = SettingsHolder
 
-Keybinds = makeSettingsButton("Edit Keybinds","129697930")
+Keybinds = makeSettingsButton("Edit Keybinds","rbxassetid://129697930")
 Keybinds.Position = UDim2.new(0, 5, 0, 85)
 Keybinds.Size = UDim2.new(1, -10, 0, 25)
 Keybinds.Name = "Keybinds"
@@ -450,19 +450,19 @@ On.Text = ""
 On.TextColor3 = Color3.new(0, 0, 0)
 On.ZIndex = 10
 
-Positions = makeSettingsButton("Edit/Goto Waypoints","5147488592")
+Positions = makeSettingsButton("Edit/Goto Waypoints","rbxassetid://5147488592")
 Positions.Position = UDim2.new(0, 5, 0, 115)
 Positions.Size = UDim2.new(1, -10, 0, 25)
 Positions.Name = "Waypoints"
 Positions.Parent = SettingsHolder
 
-EventBind = makeSettingsButton("Edit Event Binds","5147695474",759)
+EventBind = makeSettingsButton("Edit Event Binds","rbxassetid://5147695474",759)
 EventBind.Position = UDim2.new(0, 5, 0, 175)
 EventBind.Size = UDim2.new(1, -10, 0, 25)
 EventBind.Name = "EventBinds"
 EventBind.Parent = SettingsHolder
 
-Plugins = makeSettingsButton("Manage Plugins","5147695474",743)
+Plugins = makeSettingsButton("Manage Plugins","rbxassetid://5147695474",743)
 Plugins.Position = UDim2.new(0, 5, 0, 145)
 Plugins.Size = UDim2.new(1, -10, 0, 25)
 Plugins.Name = "Plugins"
@@ -531,7 +531,7 @@ CloseImage.BackgroundColor3 = Color3.new(1, 1, 1)
 CloseImage.BackgroundTransparency = 1
 CloseImage.Position = UDim2.new(0, 5, 0, 5)
 CloseImage.Size = UDim2.new(0, 10, 0, 10)
-CloseImage.Image = "5054663650"
+CloseImage.Image = "rbxassetid://5054663650"
 CloseImage.ZIndex = 10
 
 PinButton.Name = "PinButton"
@@ -547,7 +547,7 @@ PinImage.BackgroundTransparency = 1
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
 PinImage.ZIndex = 10
-PinImage.Image = "6234691350"
+PinImage.Image = "rbxassetid://6234691350"
 
 Tooltip.Name = randomString()
 Tooltip.Parent = PARENT
@@ -605,7 +605,7 @@ Logo.BackgroundTransparency = 1
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 125, 0, 127)
 Logo.Size = UDim2.new(0, 10, 0, 10)
-Logo.Image = "123321302"
+Logo.Image = "rbxassetid://123321302"
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
 
@@ -994,7 +994,7 @@ ExitImage_2.BackgroundTransparency = 1
 ExitImage_2.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_2.Size = UDim2.new(0, 10, 0, 10)
 ExitImage_2.ZIndex = 10
-ExitImage_2.Image = "5054663650"
+ExitImage_2.Image = "rbxassetid://5054663650"
 
 PositionsFrame.Name = "PositionsFrame"
 PositionsFrame.Parent = Settings
@@ -1334,7 +1334,7 @@ Img.Parent = background_3
 Img.BackgroundTransparency = 1
 Img.Position = UDim2.new(0, 242, 0, 3)
 Img.Size = UDim2.new(0, 100, 0, 95)
-Img.Image = "4113050383"
+Img.Image = "rbxassetid://4113050383"
 Img.ZIndex = 10
 
 AddPlugin.Name = "AddPlugin"
@@ -1428,7 +1428,7 @@ ExitImage_3.BackgroundColor3 = Color3.new(1, 1, 1)
 ExitImage_3.BackgroundTransparency = 1
 ExitImage_3.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_3.Size = UDim2.new(0, 10, 0, 10)
-ExitImage_3.Image = "5054663650"
+ExitImage_3.Image = "rbxassetid://5054663650"
 ExitImage_3.ZIndex = 10
 
 AliasHint.Name = "AliasHint"
@@ -1586,7 +1586,7 @@ ExitImage_5.BackgroundColor3 = Color3.new(1, 1, 1)
 ExitImage_5.BackgroundTransparency = 1
 ExitImage_5.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_5.Size = UDim2.new(0, 10, 0, 10)
-ExitImage_5.Image = "5054663650"
+ExitImage_5.Image = "rbxassetid://5054663650"
 ExitImage_5.ZIndex = 10
 
 logs.Name = randomString()
@@ -1619,7 +1619,7 @@ ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.BackgroundTransparency = 1
 ImageLabel.Position = UDim2.new(0, 3, 0, 3)
 ImageLabel.Size = UDim2.new(0, 14, 0, 14)
-ImageLabel.Image = "2406617031"
+ImageLabel.Image = "rbxassetid://2406617031"
 ImageLabel.ZIndex = 10
 
 PopupText.Name = "PopupText"
@@ -1647,7 +1647,7 @@ ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel_2.BackgroundTransparency = 1
 ImageLabel_2.Position = UDim2.new(0, 5, 0, 5)
 ImageLabel_2.Size = UDim2.new(0, 10, 0, 10)
-ImageLabel_2.Image = "5054663650"
+ImageLabel_2.Image = "rbxassetid://5054663650"
 ImageLabel_2.ZIndex = 10
 
 background.Name = "background"
@@ -2145,7 +2145,7 @@ eventEditor = (function()
 		{2,"Frame",{BackgroundColor3=currentShade2,BorderSizePixel=0,Name="TopBar",Parent={1},Size=UDim2.new(1,0,0,20),ZIndex=10,}},
 		{3,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Title",Parent={2},Position=UDim2.new(0,0,0,0),Size=UDim2.new(1,0,0.95,0),Text="Event Editor",TextColor3=Color3.new(1,1,1),TextSize=14,TextXAlignment=Enum.TextXAlignment.Center,ZIndex=10,}},
 		{4,"TextButton",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Close",Parent={2},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
-		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
+		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
 		{6,"Frame",{BackgroundColor3=currentShade1,BorderSizePixel=0,Name="Content",Parent={1},Position=UDim2.new(0,0,0,20),Size=UDim2.new(1,0,0,202),ZIndex=10,}},
 		{7,"ScrollingFrame",{BackgroundColor3=Color3.new(255,0,0),BackgroundTransparency=1,BorderColor3=Color3.new(0.15686275064945,0.15686275064945,0.15686275064945),BorderSizePixel=0,BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png",CanvasSize=UDim2.new(0,0,0,100),Name="List",Parent={6},Position=UDim2.new(0,5,0,5),ScrollBarImageColor3=Color3.new(0.30588236451149,0.30588236451149,0.3098039329052),ScrollBarThickness=8,Size=UDim2.new(1,-10,1,-10),TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png",ZIndex=10,}},
 		{8,"Frame",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Name="Holder",Parent={7},Size=UDim2.new(1,0,1,0),ZIndex=10,}},
@@ -2201,7 +2201,7 @@ eventEditor = (function()
 		{50,"TextBox",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,ClearTextOnFocus=false,Font=3,Parent={49},PlaceholderColor3=Color3.new(1,1,1),Position=UDim2.new(0,5,0,0),Size=UDim2.new(1,-45,0,20),Text="a\\b\\c\\d",TextColor3=currentText1,TextSize=14,TextXAlignment=0,ZIndex=10,}},
 		{51,"TextButton",{BackgroundColor3=currentShade1,BorderSizePixel=0,Font=3,Name="Delete",Parent={49},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="X",TextColor3=Color3.new(1,1,1),TextSize=18,ZIndex=10,}},
 		{52,"TextButton",{BackgroundColor3=currentShade1,BorderSizePixel=0,Font=3,Name="Settings",Parent={49},Position=UDim2.new(1,-40,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=18,ZIndex=10,}},
-		{53,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="1204397029",Parent={52},Position=UDim2.new(0,2,0,2),Size=UDim2.new(0,16,0,16),ZIndex=10,}},
+		{53,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://1204397029",Parent={52},Position=UDim2.new(0,2,0,2),Size=UDim2.new(0,16,0,16),ZIndex=10,}},
 	})
 	main.Name = randomString()
 	local mainFrame = main:WaitForChild("Content")
@@ -2619,7 +2619,7 @@ reference = (function()
 		{2,"Frame",{BackgroundColor3=Color3.new(0.1803921610117,0.1803921610117,0.1843137294054),BorderSizePixel=0,Name="TopBar",Parent={1},Size=UDim2.new(1,0,0,20),ZIndex=10,}},
 		{3,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Title",Parent={2},Size=UDim2.new(1,0,0.94999998807907,0),Text="Reference",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
 		{4,"TextButton",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Close",Parent={2},Position=UDim2.new(1,-20,0,0),Size=UDim2.new(0,20,0,20),Text="",TextColor3=Color3.new(1,1,1),TextSize=14,ZIndex=10,}},
-		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
+		{5,"ImageLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Image="rbxassetid://5054663650",Parent={4},Position=UDim2.new(0,5,0,5),Size=UDim2.new(0,10,0,10),ZIndex=10,}},
 		{6,"Frame",{BackgroundColor3=Color3.new(0.14117647707462,0.14117647707462,0.14509804546833),BorderSizePixel=0,Name="Content",Parent={1},Position=UDim2.new(0,0,0,20),Size=UDim2.new(1,0,0,300),ZIndex=10,}},
 		{7,"ScrollingFrame",{BackgroundColor3=Color3.new(0.14117647707462,0.14117647707462,0.14509804546833),BackgroundTransparency=1,BorderColor3=Color3.new(0.15686275064945,0.15686275064945,0.15686275064945),BorderSizePixel=0,BottomImage="rbxasset://textures/ui/Scroll/scroll-middle.png",CanvasSize=UDim2.new(0,0,0,1313),Name="List",Parent={6},ScrollBarImageColor3=Color3.new(0.30588236451149,0.30588236451149,0.3098039329052),ScrollBarThickness=8,Size=UDim2.new(1,0,1,0),TopImage="rbxasset://textures/ui/Scroll/scroll-middle.png",VerticalScrollBarInset=2,ZIndex=10,}},
 		{8,"UIListLayout",{Parent={7},SortOrder=2,}},
@@ -2925,7 +2925,7 @@ function saves()
 				ExitImage.BackgroundTransparency = 1
 				ExitImage.Position = UDim2.new(0, 5, 0, 5)
 				ExitImage.Size = UDim2.new(0, 10, 0, 10)
-				ExitImage.Image = "5054663650"
+				ExitImage.Image = "rbxassetid://5054663650"
 				ExitImage.ZIndex = 10
 
 				Exit.MouseButton1Click:Connect(function()
@@ -3277,7 +3277,7 @@ ColorsButton.MouseButton1Click:Connect(function()
 	cache_currentScroll = currentScroll
 	if not colorpickerOpen then
 		colorpickerOpen = true
-		picker = game:GetObjects("4908465318")[1]
+		picker = game:GetObjects("rbxassetid://4908465318")[1]
 		picker.Name = randomString()
 		picker.Parent = PARENT
 
@@ -4264,46 +4264,213 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'ban / banned', DESC = 'Visual ban in experience'}
+CMDs[#CMDs + 1] = {NAME = 'Misc', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'ping', DESC = 'Pingchecker'}
+CMDs[#CMDs + 1] = {NAME = 'notools', DESC = 'Remove tools'}
+CMDs[#CMDs + 1] = {NAME = 'droptools', DESC = 'Drop tools'}
+CMDs[#CMDs + 1] = {NAME = 'droppabletools', DESC = 'Makes your tools droppable'}
+CMDs[#CMDs + 1] = {NAME = 'hovername', DESC = 'Click show name'}
+CMDs[#CMDs + 1] = {NAME = 'unhovername', DESC = 'Turn off hovername'}
+CMDs[#CMDs + 1] = {NAME = 'joindate / jd [plr]', DESC = 'Tells you the date the player joined Roblox'}
+CMDs[#CMDs + 1] = {NAME = 'chatjoindate / cjd [plr]', DESC = 'Chats the date the player joined Roblox'}
+CMDs[#CMDs + 1] = {NAME = 'copyname [plr]', DESC = 'Copy full player name'}
+CMDs[#CMDs + 1] = {NAME = 'copyid [plr]', DESC = 'Copy player ID'}
+CMDs[#CMDs + 1] = {NAME = 'partname', DESC = 'Click show name item'}
+CMDs[#CMDs + 1] = {NAME = 'invpart', DESC = 'Show invisible parts'}
+CMDs[#CMDs + 1] = {NAME = 'uninvpart', DESC = 'Hide invis parts'}
+CMDs[#CMDs + 1] = {NAME = 'btools (CLIENT)', DESC = 'Visual change map tools'}
+CMDs[#CMDs + 1] = {NAME = 'logs', DESC = 'Open logs'}
+CMDs[#CMDs + 1] = {NAME = 'spawn (use nospawp first!!!)', DESC = 'Set spawn'}
+CMDs[#CMDs + 1] = {NAME = 'nospawn', DESC = 'Remove spawn'}
+CMDs[#CMDs + 1] = {NAME = 'clearerror', DESC = 'Clears the annoying box and blur when a game kicks you'}
+CMDs[#CMDs + 1] = {NAME = 'exit', DESC = 'Exit game'}
+CMDs[#CMDs + 1] = {NAME = 'down', DESC = 'Teleport Down'}
+CMDs[#CMDs + 1] = {NAME = 'up', DESC = 'Teleport Up'}
+CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Load console'}
 CMDs[#CMDs + 1] = {NAME = 'tg / telegram', DESC = 'Invite to the telegram channel'}
+CMDs[#CMDs + 1] = {NAME = 'serverinfo / info', DESC = 'Gives you info about the server'}
+CMDs[#CMDs + 1] = {NAME = 'gameid', DESC = 'Copies the games id'}
+CMDs[#CMDs + 1] = {NAME = 'rejoin / rj', DESC = 'Rejoin the game'}
+CMDs[#CMDs + 1] = {NAME = 'autorejoin / autorj', DESC = 'Auto rejoin the server if you kicked/disconnected'}
+CMDs[#CMDs + 1] = {NAME = 'serverhop / shop', DESC = 'Teleports low server'}
+CMDs[#CMDs + 1] = {NAME = 'gameteleport / gametp [place ID]', DESC = 'Join game ID'}
+CMDs[#CMDs + 1] = {NAME = 'antiafk', DESC = 'Anti kick AFK'}
+CMDs[#CMDs + 1] = {NAME = 'buyoff', DESC = 'Anti show buying anything for robux'}
+CMDs[#CMDs + 1] = {NAME = 'buyon', DESC = 'Show buying anything for robux'}
+CMDs[#CMDs + 1] = {NAME = 'enable [inventory/playerlist/chat/reset/emotes/all]', DESC = 'Toggles visibility of coregui items'}
+CMDs[#CMDs + 1] = {NAME = 'disable [inventory/playerlist/chat/reset/emotes/all]', DESC = 'Toggles visibility of coregui items'}
+CMDs[#CMDs + 1] = {NAME = 'showgui', DESC = 'Shows any invisible GUI'}
+CMDs[#CMDs + 1] = {NAME = 'unshowgui', DESC = 'Undoes showguis'}
+CMDs[#CMDs + 1] = {NAME = 'hidegui', DESC = 'Hides any GUIs in PlayerGui'}
+CMDs[#CMDs + 1] = {NAME = 'unhidegui', DESC = 'Undoes hideguis'}
+CMDs[#CMDs + 1] = {NAME = 'noname', DESC = 'Hide names'}
 
-
-
-
-
-
-
-
+CMDs[#CMDs + 1] = {NAME = 'Menu settings', DESC = ''}
 
 CMDs[#CMDs + 1] = {NAME = 'hidemenu', DESC = 'Hide menu'}
 CMDs[#CMDs + 1] = {NAME = 'showmenu', DESC = 'Shows menu'}
+CMDs[#CMDs + 1] = {NAME = 'keepcom', DESC = 'Save commands'}
+CMDs[#CMDs + 1] = {NAME = 'unkeepcom', DESC = 'Disable keepcom'}
 
 
+CMDs[#CMDs + 1] = {NAME = 'Player', DESC = ''}
 
-
-
-
-
-
-CMDs[#CMDs + 1] = {NAME = 'noclip', DESC = 'Noclip'}
-CMDs[#CMDs + 1] = {NAME = 'clip', DESC = 'Disable noclip'}
-
-
-
-
-
-
+CMDs[#CMDs + 1] = {NAME = 'spin [speed]', DESC = 'Spin'}
+CMDs[#CMDs + 1] = {NAME = 'unspin', DESC = 'Disable spin'}
+CMDs[#CMDs + 1] = {NAME = 'fp', DESC = 'First camera'}
+CMDs[#CMDs + 1] = {NAME = 'thp', DESC = 'Back camera'}
+CMDs[#CMDs + 1] = {NAME = 'noclipcam', DESC = 'Camera noclip'}
+CMDs[#CMDs + 1] = {NAME = 'maxzoom [num]', DESC = 'Maximum camera zoom'}
+CMDs[#CMDs + 1] = {NAME = 'minzoom [num](default 60)', DESC = 'Minimum camera zoom'}
+CMDs[#CMDs + 1] = {NAME = 'camdistance [num]', DESC = 'Changes camera distance from your player'}
+CMDs[#CMDs + 1] = {NAME = 'fov [num](default 70)', DESC = 'Fieldnof view'}
+CMDs[#CMDs + 1] = {NAME = 'Shiftlock', DESC = 'Enable shiftlock'}
+CMDs[#CMDs + 1] = {NAME = 'lookat [plr](Aim soon...)', DESC = 'Look player'}
+CMDs[#CMDs + 1] = {NAME = 'spectate [plr]', DESC = 'View a player'}
+CMDs[#CMDs + 1] = {NAME = 'spectateitem [part name]', DESC = 'View a item'}
+CMDs[#CMDs + 1] = {NAME = 'unspectate', DESC = 'Stop spectating'}
+CMDs[#CMDs + 1] = {NAME = 'say [text]', DESC = 'Chatted'}
+CMDs[#CMDs + 1] = {NAME = 'spam [text]', DESC = 'BEZ SPAMAAAA'}
+CMDs[#CMDs + 1] = {NAME = 'unspam', DESC = 'BEEEZ SPAAAAAMAAAAA'}
+CMDs[#CMDs + 1] = {NAME = 'pmspam [plr] [text]', DESC = 'spam on player private message'}
+CMDs[#CMDs + 1] = {NAME = 'unpmspam [plr]', DESC = 'Disable pm spam'}
+CMDs[#CMDs + 1] = {NAME = 'spamspeed [num]', DESC = 'Risk (1-5)'}
+CMDs[#CMDs + 1] = {NAME = 'flashback / dtp', DESC = 'Teleports you to last died pos'}
+CMDs[#CMDs + 1] = {NAME = 'wtp', DESC = 'Teleport up on wall'}
+CMDs[#CMDs + 1] = {NAME = 'unwtp', DESC = 'Disable walltp'}
+CMDs[#CMDs + 1] = {NAME = 'tptool', DESC = 'Gives teleport tool'}
+CMDs[#CMDs + 1] = {NAME = 'coords [plr]', DESC = 'Copy coords player'}
+CMDs[#CMDs + 1] = {NAME = 'vehicletp / vtp [plr]', DESC = 'Go to player in vehicle'}
+CMDs[#CMDs + 1] = {NAME = 'looptp [plr] [distance] [second]', DESC = 'Loop teleport to player'}
+CMDs[#CMDs + 1] = {NAME = 'unlooptp', DESC = 'Stop teleport to player'}
+CMDs[#CMDs + 1] = {NAME = 'tp [plr]', DESC = 'Go to player'}
 CMDs[#CMDs + 1] = {NAME = 'gfly', DESC = 'Ghost fly'}
 CMDs[#CMDs + 1] = {NAME = 'ungfly', DESC = 'Disables gfly'}
 CMDs[#CMDs + 1] = {NAME = 'gflys [num]', DESC = 'Set gfly speed'}
-
-
+CMDs[#CMDs + 1] = {NAME = 'vnoclip', DESC = 'Turns off vehicle collision'}
+CMDs[#CMDs + 1] = {NAME = 'vclip', DESC = 'Enables vehicle collision'}
+CMDs[#CMDs + 1] = {NAME = 'float /  plate', DESC = 'Spawns a platform beneath you causing you to float'}
+CMDs[#CMDs + 1] = {NAME = 'unfloat / noplate', DESC = 'Removes platform'}
+CMDs[#CMDs + 1] = {NAME = 'swim', DESC = 'Swim in the air'}
+CMDs[#CMDs + 1] = {NAME = 'unswim', DESC = 'Stops swimming'}
+CMDs[#CMDs + 1] = {NAME = 'noclip', DESC = 'Noclip'}
+CMDs[#CMDs + 1] = {NAME = 'clip', DESC = 'Disable noclip'}
+CMDs[#CMDs + 1] = {NAME = 'trah [plr] [speed]', DESC = 'Ebashu v kashu'}
+CMDs[#CMDs + 1] = {NAME = 'untrah', DESC = 'uwu'}
+CMDs[#CMDs + 1] = {NAME = 'headsit [plr]', DESC = 'Sit on player head'}
+CMDs[#CMDs + 1] = {NAME = 'walkp [plr]', DESC = 'Follow a player using pathfinding'}
+CMDs[#CMDs + 1] = {NAME = 'wcp [waypoint]', DESC = 'Walk to checkpoint using pathfinding'}
+CMDs[#CMDs + 1] = {NAME = 'unfollow', DESC = 'Stop follow player'}
+CMDs[#CMDs + 1] = {NAME = 'stare [plr]', DESC = 'Aim model'}
+CMDs[#CMDs + 1] = {NAME = 'unstare [plr]', DESC = 'Disables model aim'}
+CMDs[#CMDs + 1] = {NAME = 'fling', DESC = 'Fling'}
+CMDs[#CMDs + 1] = {NAME = 'unfling', DESC = 'Disable fling'}
+CMDs[#CMDs + 1] = {NAME = 'reset', DESC = 'Reset'}
+CMDs[#CMDs + 1] = {NAME = 'god', DESC = 'Work im some games'}
+CMDs[#CMDs + 1] = {NAME = 'invis', DESC = 'Leonnnnn'}
+CMDs[#CMDs + 1] = {NAME = 'vis', DESC = 'Ne leon:('}
+CMDs[#CMDs + 1] = {NAME = 'toolinvisible / toolinvis / tinvis', DESC = 'Test'}
 CMDs[#CMDs + 1] = {NAME = 'speed [num]', DESC = 'Change your speed'}
-
 CMDs[#CMDs + 1] = {NAME = 'loopspeed [num]', DESC = 'Loop your speed'}
 CMDs[#CMDs + 1] = {NAME = 'unloopspeed', DESC = 'Turn off loopspeed'}
+CMDs[#CMDs + 1] = {NAME = 'jp [num]', DESC = 'Change jump height'}
+CMDs[#CMDs + 1] = {NAME = 'loopjp [num]', DESC = 'Loop your jump height'}
+CMDs[#CMDs + 1] = {NAME = 'unloopjp', DESC = 'Turn off loopjumppower'}
+CMDs[#CMDs + 1] = {NAME = 'maxslopeangle / msa [num]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'gravity [num]', DESC = 'Change your gravity'}
+CMDs[#CMDs + 1] = {NAME = 'sit', DESC = 'You sit'}
+CMDs[#CMDs + 1] = {NAME = 'lay', DESC = 'You lay down'}
+CMDs[#CMDs + 1] = {NAME = 'sitwalk', DESC = 'You walk but you sit'}
+CMDs[#CMDs + 1] = {NAME = 'nosit', DESC = 'You cant sit'}
+CMDs[#CMDs + 1] = {NAME = 'unnosit', DESC = 'Disable nosit'}
+CMDs[#CMDs + 1] = {NAME = 'jump', DESC = 'You jump'}
+CMDs[#CMDs + 1] = {NAME = 'autojump', DESC = 'Auto jump'}
+CMDs[#CMDs + 1] = {NAME = 'unajump', DESC = 'Disable autojump'}
+CMDs[#CMDs + 1] = {NAME = 'stun', DESC = 'Stun you'}
+CMDs[#CMDs + 1] = {NAME = 'unstun', DESC = 'Disable stun'}
+CMDs[#CMDs + 1] = {NAME = 'norotate', DESC = 'Disable rotate'}
+CMDs[#CMDs + 1] = {NAME = 'unnorotate', DESC = 'Enables rotate'}
+CMDs[#CMDs + 1] = {NAME = 'tpwalk [num]', DESC = 'Teleport walk'}
+CMDs[#CMDs + 1] = {NAME = 'untpwalk', DESC = 'Disable tpwalk'}
+CMDs[#CMDs + 1] = {NAME = 'trip', DESC = 'Spotknulsya'}
 
+CMDs[#CMDs + 1] = {NAME = 'Graphic', DESC = ''}
 
+CMDs[#CMDs + 1] = {NAME = 'fb', DESC = 'Make map bright'}
+CMDs[#CMDs + 1] = {NAME = 'loopfb', DESC = 'Loop map bright'}
+CMDs[#CMDs + 1] = {NAME = 'unloopfb', DESC = 'Unloop fullbright'}
+CMDs[#CMDs + 1] = {NAME = 'day (VISUAL)', DESC = 'Day time'}
+CMDs[#CMDs + 1] = {NAME = 'night (VISUAL)', DESC = 'Night time'}
+CMDs[#CMDs + 1] = {NAME = 'nofog', DESC = 'Remove fog'}
+CMDs[#CMDs + 1] = {NAME = 'brightness [num] (CLIENT)', DESC = 'Bright settings'}
+CMDs[#CMDs + 1] = {NAME = 'gshadows', DESC = 'Enable global shadows'}
+CMDs[#CMDs + 1] = {NAME = 'nogshadows', DESC = 'Disable global shadows'}
+CMDs[#CMDs + 1] = {NAME = 'light [radius] [brightness] (VISUAL)', DESC = 'Give you player dynamic light'}
+CMDs[#CMDs + 1] = {NAME = 'unlight', DESC = 'Remove dynamic light'}
+CMDs[#CMDs + 1] = {NAME = 'xray (if nocliocam not work)', DESC = '95% transparency'}
+CMDs[#CMDs + 1] = {NAME = 'unxray', DESC = 'Restore transparency'}
+CMDs[#CMDs + 1] = {NAME = 'antilag', DESC = 'Boost FPS'}
+CMDs[#CMDs + 1] = {NAME = 'hd', DESC = 'Beautiful graphic'}
+
+CMDs[#CMDs + 1] = {NAME = 'Checkpoints', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'cp [name]', DESC = 'Sets checkpoint in your position'}
+CMDs[#CMDs + 1] = {NAME = 'chs', DESC = 'Checkpoint list'}
+CMDs[#CMDs + 1] = {NAME = 'ecp', DESC = 'Esp all checkpoints'}
+CMDs[#CMDs + 1] = {NAME = 'unecp', DESC = 'Hide esp checkpoints'}
+CMDs[#CMDs + 1] = {NAME = 'tcp', DESC = 'Teleport to checkpoint'}
+CMDs[#CMDs + 1] = {NAME = 'dcp [name]', DESC = 'Delete checkpoint'}
+
+CMDs[#CMDs + 1] = {NAME = 'Client/Visual', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'antikick (CLIENT)', DESC = 'Prevents localscripts from kicking you'}
+CMDs[#CMDs + 1] = {NAME = 'freeze [plr] (CLIENT)', DESC = 'Freeze player'}
+CMDs[#CMDs + 1] = {NAME = 'thaw [plr] (CLIENT)', DESC = 'Unfreeze player'}
+CMDs[#CMDs + 1] = {NAME = 'esp', DESC = 'Player nickname, chams and more'}
+CMDs[#CMDs + 1] = {NAME = 'unesp', DESC = 'Removes esp'}
+CMDs[#CMDs + 1] = {NAME = 'chams', DESC = 'Show model player'}
+CMDs[#CMDs + 1] = {NAME = 'unchams', DESC = 'Removes chams'}
+CMDs[#CMDs + 1] = {NAME = 'locate [plr]', DESC = 'View a one player'}
+CMDs[#CMDs + 1] = {NAME = 'unlocate [plr]', DESC = 'Remove locate'}
+CMDs[#CMDs + 1] = {NAME = 'deletemap', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'Test/Soon', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'tpua [plr]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'inspect [plr]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'carpet [plr]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'uncarpet', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'hipheight [num]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'respawn', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'ejump', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'unejump', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'norender', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'render', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'blockhead', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'blockhats', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'blocktool', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'creeper', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'drophats', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'dv', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'weaken [num]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'unweaken', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'strengthen [num]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'unstrengthen', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'breakvelocity', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'split', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'autokeypress [key] [down delay] [up delay]', DESC = 'Test'}
+CMDs[#CMDs + 1] = {NAME = 'unautokeypress', DESC = 'Test'}
+
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = 'Other Games...', DESC = ''}
+CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'Blox Fruits', DESC = ''}
+
+CMDs[#CMDs + 1] = {NAME = 'Sea1', DESC = 'Teleport to sea 1'}
+CMDs[#CMDs + 1] = {NAME = 'Sea2', DESC = 'Teleport to sea 2'}
+CMDs[#CMDs + 1] = {NAME = 'Sea3', DESC = 'Teleport to sea 3'}
 
 wait()
 
@@ -5085,7 +5252,7 @@ Cmdbar.Focused:Connect(function()
 end)
 
 ESPenabled = false
-CHMSenabled = true
+CHMSenabled = false
 
 function round(num, numDecimalPlaces)
 	local mult = 10^(numDecimalPlaces or 0)
@@ -6029,7 +6196,7 @@ addcmd('serverinfo',{'info','sinfo'},function(args, speaker)
 		ExitImage.BackgroundTransparency = 1
 		ExitImage.Position = UDim2.new(0, 5, 0, 5)
 		ExitImage.Size = UDim2.new(0, 10, 0, 10)
-		ExitImage.Image = " "
+		ExitImage.Image = "rbxassetid://5054663650"
 		ExitImage.ZIndex = 10
 
 		background.Name = "background"
@@ -6272,10 +6439,34 @@ addcmd('serverinfo',{'info','sinfo'},function(args, speaker)
 	end)
 end)
 
-addcmd('jobid',{},function(args, speaker)
+addcmd('gameid',{},function(args, speaker)
 	local jobId = 'Roblox.GameLauncher.joinGameInstance('..PlaceId..', "'..JobId..'")'
 	toClipboard(jobId)
 end)
+
+addcmd('hd',{},function(args, speaker)
+loadstring(game:HttpGet('https://pastebin.com/raw/Q5hX9qud'))()
+            end)
+            
+addcmd('Up',{},function(args, speaker)
+                local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+		RootPart.CFrame = (RootPart.CFrame * CFrame.new(0, 50, 0))
+
+            end)
+            
+addcmd('down',{},function(args, speaker)
+                execCmd("lay")
+
+                execCmd("noclip")
+
+                wait(0.4)
+
+                execCmd("clip")
+
+                execCmd("jump")
+
+            end)
 
 addcmd('notifyjobid',{},function(args, speaker)
 	notify('JobId / PlaceId',JobId..' / '..PlaceId)
@@ -6287,6 +6478,18 @@ end)
 
 addcmd('gametp',{'gameteleport'},function(args, speaker)
 	TeleportService:Teleport(args[1])
+end)
+
+addcmd('Sea1',{},function(args, speaker)
+	TeleportService:Teleport(2753915549)
+end)
+
+addcmd('Sea3',{},function(args, speaker)
+	TeleportService:Teleport()
+end)
+
+addcmd('Sea2',{},function(args, speaker)
+	TeleportService:Teleport(4442272183)
 end)
 
 addcmd('ban',{'banned'},function(args, speaker)
@@ -8013,7 +8216,7 @@ addcmd('btools',{},function(args, speaker)
 end)
 
 addcmd('f3x',{'fex'},function(args, speaker)
-	loadstring(game:GetObjects("6695644299")[1].Source)()
+	loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 end)
 
 addcmd('partpath',{'partname'},function(args, speaker)
@@ -8092,7 +8295,7 @@ addcmd('joindate',{'jd'},function(args, speaker)
 		local splitDates = string.split(date,"-")
 		table.insert(dates,Players[v].Name.." joined: "..splitDates[2].."/"..splitDates[3].."/"..splitDates[1])
 	end
-	notify('Join Date (Month/Day/Year)',table.concat(dates, ',\n'))
+	notify('Join Date (Month/Day/Year/Minutes)',table.concat(dates, ',\n'))
 end)
 
 addcmd('chatjoindate',{'cjd'},function(args, speaker)
@@ -8881,7 +9084,7 @@ addcmd('dance', {}, function(args, speaker)
 	if not r15(speaker) then
 		local dances = {"27789359", "30196114", "248263260", "45834924", "33796059", "28488254", "52155728"}
 		local animation = Instance.new("Animation")
-		animation.AnimationId = "" .. dances[math.random(1, #dances)]
+		animation.AnimationId = "rbxassetid://" .. dances[math.random(1, #dances)]
 		animTrack = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(animation)
 		animTrack:Play()
 	else
@@ -9187,7 +9390,7 @@ addcmd('spasm',{},function(args, speaker)
 		local pchar=speaker.Character
 		local AnimationId = "33796059"
 		SpasmAnim = Instance.new("Animation")
-		SpasmAnim.AnimationId = ""..AnimationId
+		SpasmAnim.AnimationId = "rbxassetid://"..AnimationId
 		Spasm = pchar:FindFirstChildOfClass('Humanoid'):LoadAnimation(SpasmAnim)
 		Spasm:Play()
 		Spasm:AdjustSpeed(99)
@@ -9205,7 +9408,7 @@ addcmd('headthrow',{},function(args, speaker)
 	if not r15(speaker) then
 		local AnimationId = "35154961"
 		local Anim = Instance.new("Animation")
-		Anim.AnimationId = ""..AnimationId
+		Anim.AnimationId = "rbxassetid://"..AnimationId
 		local k = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Anim)
 		k:Play(0)
 		k:AdjustSpeed(1)
@@ -9219,7 +9422,7 @@ addcmd('animation',{'anim'},function(args, speaker)
 		local pchar=speaker.Character
 		local AnimationId = tostring(args[1])
 		local Anim = Instance.new("Animation")
-		Anim.AnimationId = ""..AnimationId
+		Anim.AnimationId = "rbxassetid://"..AnimationId
 		local k = pchar:FindFirstChildOfClass('Humanoid'):LoadAnimation(Anim)
 		k:Play()
 		if args[2] then
@@ -9627,7 +9830,7 @@ addcmd('olddex', {'odex'}, function(args, speaker)
         return Objects
     end
 
-    local Dex = getobjects("10055842438")[1]
+    local Dex = getobjects("rbxassetid://10055842438")[1]
     Dex.Parent = PARENT
 
     local function Load(Obj, Url)
@@ -9895,9 +10098,9 @@ addcmd('bang',{'rape'},function(args, speaker)
 	for _, v in pairs(players) do
 		bangAnim = Instance.new("Animation")
 		if not r15(speaker) then
-			bangAnim.AnimationId = "148840371"
+			bangAnim.AnimationId = "rbxassetid://148840371"
 		else
-			bangAnim.AnimationId = "5918726674"
+			bangAnim.AnimationId = "rbxassetid://5918726674"
 		end
 		bang = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(bangAnim)
 		bang:Play(.1, 1, 1)
@@ -9939,7 +10142,7 @@ addcmd('carpet',{},function(args, speaker)
 		local players = getPlayer(args[1], speaker)
 		for i,v in pairs(players)do
 			carpetAnim = Instance.new("Animation")
-			carpetAnim.AnimationId = "282574440"
+			carpetAnim.AnimationId = "rbxassetid://282574440"
 			carpet = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(carpetAnim)
 			carpet:Play(.1, 1, 1)
 			local carpetplr = Players[v].Name
@@ -11922,7 +12125,7 @@ task.spawn(function()
 			ExitImage.BackgroundTransparency = 1
 			ExitImage.Position = UDim2.new(0, 5, 0, 5)
 			ExitImage.Size = UDim2.new(0, 10, 0, 10)
-			ExitImage.Image = "5054663650"
+			ExitImage.Image = "rbxassetid://5054663650"
 			ExitImage.ZIndex = 10
 
 			wait(1)
