@@ -14,7 +14,7 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-currentVersion = '0.19'
+currentVersion = '0.20'
 
 Players = game:GetService("Players")
 
